@@ -69,43 +69,63 @@
   }
 }
 
-@media screen and (max-width: 443px) {
-  .sidebar {
-    width: 150px;
+@media screen and (max-width: 510px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
+
   .button {
     white-space: nowrap;
-    word-wrap: break-word;
   }
-  .post-card {
-    width: 80%;
+
+  .header {
+    top: 0px;
+    position: absolute;
+    margin-left: 150px;
   }
+
   .sidebar {
-    width: 150px;
+    width: 40%;
+    height: 252px;
+    position: static;
   }
+  .kkk {
+    display: none;
+  }
+
+  .post-card {
+    width: 90%;
+    z-index: 1;
+    margin-left: 5%;
+  }
+
   .create-post {
     width: 80%;
   }
 }
 
-@media screen and (max-width: 372px) {
-  .sidebar {
-    width: 140px;
+@media screen and (max-width: 386px) {
+  .header {
+    margin-left: 100px;
+    z-index: 0;
   }
-  .post-card {
-    margin-left: 8px;
+
+  .button {
+    z-index: 1;
+    margin-left: auto;
+    white-space: wrap;
+    text-align: center;
+    margin-right: 3px;
   }
 }
 
-@media screen and (max-width: 509px) {
-  .create-post {
-    width: 85%;
-    margin-top: 50px;
-    margin-left: 10px;
+@media screen and (max-width: 331px) {
+  .post-card {
+    margin-top: 15px;
   }
-}
-@media screen and (max-width: 401px) {
-  .create-post {
-    width: 80%;
+  .sidebar {
+    height: 292px;
   }
 }
